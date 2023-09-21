@@ -1,0 +1,144 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+* {
+   font-family: 'Noto Sans KR', sans-serif;
+}
+	 
+h1{
+	text-align: center;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+img{
+	margin: auto;
+    display: block;
+    border-radius: 65px;
+}
+
+.noticeimg{
+	margin: auto;
+    display: block;
+    width: 136px;
+  	height: 130px;
+  	object-fit: cover;
+  	border-radius: 0px;
+}
+
+.item{
+    min-height: 150px;
+    flex-basis: 150px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    border : 2px solid #e2e2e2;
+    border-radius: 15px;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between; /* 아이템 사이의 간격을 균등하게 분배 */
+  flex-wrap: wrap; /* 필요한 경우 아이템들을 여러 행에 나누도록 설정 */
+}
+
+.flexbox .item {
+  flex: 1; /* 모든 아이템이 동일한 공간을 가지도록 설정 */
+  margin: 10px; /* 아이템 간의 간격을 조절할 수 있습니다. */
+  border: 1px solid #ccc; /* 아이템의 테두리를 추가하거나 원하는 스타일을 적용합니다. */
+  padding: 55px; /* 내용 주위에 여백을 설정할 수 있습니다. */
+  box-sizing: border-box; /* 테두리와 여백을 포함하여 요소의 크기를 계산합니다. */
+  background-color: #ffe;
+}
+.nameset1{
+	font-size: 15px;
+	text-align: center;
+}
+
+.nameset2{
+	font-size: 15px;
+	text-align: center;
+}
+
+.nameset3{
+	font-size: 15px;
+	text-align: center;
+}
+.nameset4{
+	font-size: 15px;
+	text-align: center;
+}
+.nameset5{
+	font-size: 15px;
+
+}
+
+.nameset6{
+	font-size: 15px;
+	text-align: center;
+}
+.nameset7{
+	font-size: 15px;
+	text-align: center;
+}
+.myinfo{
+	text-align:center;
+}
+	 
+.eimg{
+	border-radius: 100px;
+	width:150px;	
+	height:150px;
+}
+
+.pic{
+	border-radius: 100px;
+}
+
+.item4{
+    border : 2px solid #e2e2e2;
+    border-radius: 15px;
+	margin: 10px; /* 아이템 간의 간격을 조절할 수 있습니다. */
+	padding: 45px; /* 내용 주위에 여백을 설정할 수 있습니다. */
+	background-color: #ffe;;
+}
+
+.mypage{
+	margin-bottom:5px;
+	font-size: 23px;
+}
+
+.notice {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 23px;
+    border-bottom: 1px solid black;
+}
+
+.tdntitle {
+    font-size: 23px;
+}
+
+.tdndate{
+    font-size: 23px;
+}
+
+.trn{
+	border-bottom: 1px solid #c4c4c4;
+}
+
+/* .nameset5 내부의 <table> 요소에 스타일을 적용 */
+.nameset5 table {
+    width: 100%; /* 테이블을 부모 요소의 100% 너비로 설정 */
+}
+
+/* 제목과 등록일을 포함한 테이블 행(tr)에 스타일을 적용 */
+.nameset5 tr {
+    display: flex;
+    justify-content: space-between; /* 왼쪽과 오른쪽 사이의 공간을 최대화하여 정렬 */
+}
+
+/* 제목과 등록일 헤더(th) 요소의 스타일 설정 */
+.nameset5 .tdndate2 {
+    text-align: left; /* 제목은 왼쪽 정렬 */
+
+}
+
