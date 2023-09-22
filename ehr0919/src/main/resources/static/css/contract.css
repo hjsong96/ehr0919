@@ -168,6 +168,18 @@ button{
    
 }
 
+.print{
+	padding: 4px 5px 10px 0px;
+	border: none;
+}
+
+.submit{
+	border: none;
+	padding: 5px 5px 10px 0px;
+	
+}
+
+
 .middle_area2{
 	width: 1800px;
   height: 490px;
@@ -314,3 +326,4 @@ table{
 	background-color: transparent;
 		text-align: center;
 }
+

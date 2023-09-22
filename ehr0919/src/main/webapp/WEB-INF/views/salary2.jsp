@@ -357,14 +357,14 @@ function getcontent() {
 						<div class="page_nation">
 					 <div class="page_left_wrap">
 				      <c:if test="${ph.showPrev}">
-				            <button class="page_left" onclick="location.href='./salary2?eno=${sessionScope.eno}&page=${ph.startPage-1}'">이전</button>
+				            <a class="page_left" onclick="location.href='./salary2?eno=${sessionScope.eno}&page=${ph.startPage-1}'">이전</a>
 				        </c:if>
 				     </div>
 				      <c:forEach var="i" begin="${ph.startPage}" end="${ph.endPage}">
 						<a class="num" href="<c:url value='./salary2?eno=${sessionScope.eno}&page=${i}&pageSize=${ph.pageSize}'/>" data-page="${i}">${i}</a>
 				      </c:forEach>
 				      <c:if test="${ph.showNext}">
-				            <button class="page_right" onclick="location.href='./salary2?eno=${sessionScope.eno}&page=${ph.endPage+1}'">다음</button>
+				            <a class="page_right" onclick="location.href='./salary2?eno=${sessionScope.eno}&page=${ph.endPage+1}'">다음</a>
 				        </c:if>
 						</div>
 				   </div>
@@ -382,7 +382,7 @@ function getcontent() {
 					<table class="salarytb2">
 							<tr>
 								<td class="th2 tt">No</td>
-								<td class="th2 tt">사번</td>
+								<td class="th7 tt">사번</td>
 								<td class="th3 tt">성명</td>
 								<td class="th4 tt">부서</td>
 								<td class="th2 tt">직급</td>

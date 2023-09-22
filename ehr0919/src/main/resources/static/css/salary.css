@@ -87,7 +87,7 @@ vertical-align: top;
 border-radius: 10px 10px 0px 0px / 10px 10px 0px 0px;
 }
 
-.th2,.th3,.th4,.th5,.th6{
+.th2,.th3,.th4,.th5,.th6, .th7{
 	height: 40px;
 }
 
@@ -113,6 +113,10 @@ border-radius: 10px 10px 0px 0px / 10px 10px 0px 0px;
 
 .th6{
 	width: 97px;
+}
+
+.th7{
+	width: 75px;
 }
 
 .td1{

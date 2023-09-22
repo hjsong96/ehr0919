@@ -125,37 +125,38 @@ function getsno() {
     }
 }
 
-
-
-	$(function() {
-		
 		$(function(){
 			$("#allCheck").click(function() {
 			    if($("#allCheck").is(":checked")) $("input[name=check]").prop("checked", true);
 			    else $("input[name=check]").prop("checked", false);
 			 });
 		});
+
+
+		function sendmail() {
+			
+		    let count = $("input[name=check]:checked");
+		    
+		    if (count.length > 1) {
+		        alert("메일은 하나의 대상에게만 보낼 수 있습니다.");
+		        return;
+		    }
+		    
+		    count.each(function() {
+		        let eid2 = $(this).closest('tr').find('.eid2').text();
+		        let ename2 = $(this).closest('tr').find('.ename2').text();
+		        let edept2 = $(this).closest('tr').find('.edept2').text();
+		        let eemail2 = $(this).closest('tr').find('.eemail2').text();
+
+		        let text = edept2 + " " + ename2 + "님 연봉계약서 동의 여부가 선택되지 않았습니다. 확인 후 연봉계약서 동의 부탁드립니다.^^";
+
+		        $(".email").val(eemail2);
+		        $(".content").val(text);
+		    });
+
+		    $("#exampleModal").modal("show");
+		};
 		
-		
-		$(".tr")
-				.click(
-						function() {
-							let ename = $(this).find(".ename").text();
-							let edept = $(this).find(".edept").text();
-							let eemail = $(this).find(".eemail").text();
-
-							let text = edept
-									+ " "
-									+ ename
-									+ "님 연봉계약서 동의 여부가 선택되지 않았습니다.                                    확인 후 연봉계약서 동의 부탁드립니다.^^";
-
-							$(".email").val(eemail);
-							$(".content").val(text);
-
-							$("#exampleModal").modal("show");
-
-						});
-	});
 	
 	function getcontent() {
 		let count = $("input[name=check]:checked");
@@ -245,6 +246,7 @@ function getsno() {
 				<button class="search">조회</button>
 				<button type="button" class="delBtn" onclick="getsno()">삭제</button>
 				<button type="button" class="copyBtn" onclick="getcontent()">복사</button>
+				<button type="button" class="mailBtn" onclick="sendmail()">메일</button>
 				<input type="hidden" name="eno" value="${sessionScope.eno}">
 				</div>
 				</div>
@@ -293,14 +295,14 @@ function getsno() {
 						<div class="page_nation">
 					 <div class="page_left_wrap">
 				      <c:if test="${ph.showPrev}">
-				            <button class="page_left" onclick="location.href='./contract2?eno=${sessionScope.eno}&page=${ph.startPage-1}'">이전</button>
+				            <a class="page_left" onclick="location.href='./contract2?eno=${sessionScope.eno}&page=${ph.startPage-1}'">이전</a>
 				        </c:if>
 				     </div>
 				      <c:forEach var="i" begin="${ph.startPage}" end="${ph.endPage}">
 						<a class="num" href="<c:url value='./contract2?eno=${sessionScope.eno}&page=${i}&pageSize=${ph.pageSize}'/>" data-page="${i}">${i}</a>
 				      </c:forEach>
 				      <c:if test="${ph.showNext}">
-				            <button class="page_right" onclick="location.href='./contract2?eno=${sessionScope.eno}&page=${ph.endPage+1}'">다음</button>
+				            <a class="page_right" onclick="location.href='./contract2?eno=${sessionScope.eno}&page=${ph.endPage+1}'">다음</a>
 				        </c:if>
 						</div>
 				   </div>
@@ -374,7 +376,7 @@ function getsno() {
 										value="연봉계약서 확인 바랍니다."> <input class="email"
 										type="text" name="to" placeholder="받는 사람 email 주소를 적어주세요">
 									<textarea class="content" name="content"></textarea>
-									<button class="mail-button" type="submit">메일보내기</button>
+									<button class="mail-button" type="submit">보내기</button>
 								</form>
 							</div>
 						</div>
