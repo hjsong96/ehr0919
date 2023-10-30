@@ -18,7 +18,7 @@
 		bir.value = today;
 	}
 
-	$(function() {
+	$(function() {  
 		$(".search").click(
 				function() {
 					let eno = $(".eno").val();

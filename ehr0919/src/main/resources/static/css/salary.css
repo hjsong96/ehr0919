@@ -68,7 +68,7 @@ table{
 }
 
 td{
-	background-color: #FFF8E1;
+	background-color: #E8EAF6;:
 	   height: 10px;
 }
 
@@ -82,17 +82,20 @@ vertical-align: top;
    table-layout: fixed;
 	text-align: center;
 	border-bottom: 1px solid #EEEEEE;;
-	background-color: #FF8F00;
+	background-color:#283593; 
 	color: white;
 border-radius: 10px 10px 0px 0px / 10px 10px 0px 0px;
 }
 
 .th2,.th3,.th4,.th5,.th6, .th7{
 	height: 40px;
+	background-color: #E8EAF6;
 }
 
 .tt{
-		background-color: #FFB300;
+		background-color:#283593;
+		color: white;
+		text-align: center;
 }
 
 .th2{
@@ -126,7 +129,7 @@ padding-left: 10px;
   text-align: center;
   table-layout: fixed;
   border-bottom: 0.5px solid #EEE;
-  background-color: #FFF8E1;
+  background-color:#C5CAE9;
 }
 
 .td2{
@@ -136,6 +139,7 @@ padding-left: 10px;
 	text-align: center;
 	table-layout: fixed;
 		border-bottom: 0.5px solid #EEEEEE;
+		background-color: white;
 }
 
 .td3{
@@ -144,7 +148,7 @@ padding-left: 10px;
 	height: 30px;
 	text-align: left;
 	table-layout: fixed;
-		background-color: #FFF8E1;
+		background-color:#7986CB;
 	
 }
 
@@ -162,9 +166,10 @@ padding-left: 10px;
 	display:inline-block;
 }
 .page_nation a:hover {
-	background-color: #FFB74D;
+	background-color:#283593;
 	cursor: pointer;
 	font-weight: bolder;
+	color: white;
 }
 
 .page_nation a {
@@ -199,9 +204,9 @@ padding-left: 10px;
 button{
    width: 58px;
    border: 0;
-   background-color: #FFB74D;
+   background-color: #283593;
    border-radius: 7px;
-   padding: 10px 5px 10px 0px;
+   padding: 10px 1px 10px 0px;
    margin: 3px;
    color: white;
    font-weight: bold;
@@ -246,6 +251,7 @@ button:hover{
 		height: 40px;
 	border: 0;
 	background-color: transparent;
+	text-align: center;
 }
 
 .li1{
