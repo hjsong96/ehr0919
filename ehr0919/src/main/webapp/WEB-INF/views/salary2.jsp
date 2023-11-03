@@ -12,7 +12,7 @@
 <script src="./js/jquery-3.7.0.min.js"></script>
 <script type="text/javascript">
 
-$(document).ready(function() {
+$(document).ready(function() {  
     // 저장 버튼 클릭 시 이벤트 핸들러
     $(".save").on("click", function() {
         let isEmpty = false; // 빈 필드 여부를 나타내는 변수
