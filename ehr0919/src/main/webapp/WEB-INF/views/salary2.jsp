@@ -11,7 +11,7 @@
 <link href="./css/style.css" rel="stylesheet" />
 <script src="./js/jquery-3.7.0.min.js"></script>
 <script type="text/javascript">
-
+  
 $(document).ready(function() {  
     // 저장 버튼 클릭 시 이벤트 핸들러
     $(".save").on("click", function() {
