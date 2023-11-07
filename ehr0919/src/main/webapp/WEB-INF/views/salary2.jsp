@@ -4,7 +4,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html>
-<head>
+<head>  
 <meta charset="UTF-8">
 <title>Salary</title>
 <link href="./css/salary.css" rel="stylesheet" />
