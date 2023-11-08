@@ -13,7 +13,7 @@
 
 <body>
 	 <%@ include file="nav.jsp"%> 
-	<%@ include file="sidebar.jsp"%>
+	<%@ include file="sidebar.jsp"%>  
  <article id="article">
  <br>	
  <div class="atList">
