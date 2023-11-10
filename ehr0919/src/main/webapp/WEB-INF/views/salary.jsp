@@ -16,7 +16,7 @@
 		today = today.toISOString().slice(0, 7);
 		bir = document.getElementById("sdate");
 		bir.value = today;
-	}   
+	}     
 
 	$(function() {  
 		$(".search").click(
